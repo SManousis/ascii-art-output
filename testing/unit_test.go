@@ -38,6 +38,14 @@ func TestMainWithVariousStrings(t *testing.T) {
 			args: []string{"cmd", "HI", "standard"},
 		},
 		{
+			name: "Test with invalid argument",
+			args: []string{"cmd", "HI", "mistake"},
+		},
+		{
+			name: "Test with invalid number of arguments",
+			args: []string{"cmd", "HI", "standard", "abc"},
+		},
+		{
 			name: "Test with word 'HELLO'",
 			args: []string{"cmd", "HELLO", "standard"},
 		},
