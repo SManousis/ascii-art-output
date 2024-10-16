@@ -41,9 +41,11 @@ func PrintAsciiArtToFile(newFile *os.File, sentences []string, textFile []string
 			}
 		}
 	}
-	// Write an extra newline at the end of the file
-	_, err := newFile.WriteString("\n")
-	if err != nil {
-		log.Fatal(err)
-	}
+	/*
+		 	// Write an extra newline at the end of the file
+			_, err := newFile.WriteString("\n")
+			if err != nil {
+				log.Fatal(err)
+			}
+	*/
 }
