@@ -73,6 +73,10 @@ func TestMainWithVariousStrings(t *testing.T) {
 			name: "Test with characters in string",
 			args: []string{"cmd", "Hello\"skoul(i)kom@p$", "standard"},
 		},
+		{
+			name: "Test with output file option",
+			args: []string{"cmd", "--output=exampletest.txt", "Hello\"skoul(i)kom@p$", "standard"},
+		},
 	}
 
 	for _, tt := range tests {
